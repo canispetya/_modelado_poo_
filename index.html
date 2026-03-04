@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Módulo 4 - Modelado POO (Taxis / Sony / Sumatoria)</title>
+  <!-- Google Font para tipografía moderna -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Modelado de Clases (POO) en JavaScript</h1>
+      <p>Jerarquías (herencia), constructores y métodos: Taxis + Catálogo Sony + Sumatoria.</p>
+    </header>
+
+    <section class="card">
+      <h2>🚖 Escenario: Taxis Urbanos</h2>
+      <p>
+        Prueba el modelado y revisa la consola (F12). El enunciado pide taxis tradicionales (A1),
+        taxis particulares (licencia B) divididos en Express y Premium, y taxi Cargo.  [oai_citation:3‡Modelado de Clases en JavaScript con Enfoque Orientado a Objetos.pdf](sediment://file_00000000a8a8720e9bdff6f9632e6a22)
+      </p>
+      <div class="buttons">
+        <button id="btnTaxis">Ejecutar demo Taxis (console)</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>📦 Escenario: Catálogo Sony Chile</h2>
+      <p>
+        Modelamos productos por categorías y mostramos información.
+        (Los datos son de ejemplo; el foco es el modelado orientado a objetos).  [oai_citation:4‡Modelado de Clases en JavaScript con Enfoque Orientado a Objetos.pdf](sediment://file_00000000a8a8720e9bdff6f9632e6a22)
+      </p>
+      <div class="buttons">
+        <button id="btnSony">Ejecutar demo Catálogo (console)</button>
+        <button id="btnSonyFiltrar">Filtrar “Televisores” (console)</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>➕ Sumatoria</h2>
+      <p>
+        Base aleatoria entre 1 y 10. La primera línea la escribe el constructor y luego
+        el método <code>sumar()</code> escribe las siguientes líneas “en parejas”.  [oai_citation:5‡Modelado de Clases en JavaScript con Enfoque Orientado a Objetos.pdf](sediment://file_00000000a8a8720e9bdff6f9632e6a22)
+      </p>
+
+      <div class="row">
+        <div class="field">
+          <label>Base aleatoria:</label>
+          <input id="baseInput" type="number" readonly />
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="btnSumar">Sumar</button>
+        <button id="btnResetSumatoria" class="secondary">Recrear objeto (nueva base)</button>
+        <button id="btnLimpiar" class="secondary">Limpiar salida</button>
+      </div>
+
+      <div class="salida-box">
+        <h3>Salida:</h3>
+        <ul id="historial" class="history"></ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Importante: separados como pide el ejercicio -->
+  <script src="./assets/js/taxis.js"></script>
+  <script src="./assets/js/sony.js"></script>
+  <script src="./assets/js/sumatoria.js"></script>
+</body>
+</html>
